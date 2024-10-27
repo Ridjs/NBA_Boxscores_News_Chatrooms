@@ -1,0 +1,1 @@
+This app keeps tracks of daily NBA game boxscores and news. You can also make public and private chatrooms and set your favorite team, so it is always at the top when it is playing on that date. Firebase is used for authentication and data storage.
