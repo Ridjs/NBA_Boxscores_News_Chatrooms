@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigator_login"
+    app:startDestination="@id/navigationLoginOptions">
+    <fragment
+        android:id="@+id/navigationLoginOptions"
+        android:name="com.example.finalproject.LoginOptionsFragment"
+        android:label="Login Options"
+        tools:layout="@layout/fragment_login_options" >
+        <action
+            android:id="@+id/action_navigationLoginOptions_to_navigationGmailLogin"
+            app:destination="@id/navigationGmailLogin"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_navigationLoginOptions_to_navigationGmailRegister"
+            app:destination="@id/navigationGmailRegister"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_navigationLoginOptions_to_navigationPhoneLoginCode"
+            app:destination="@id/navigationPhoneLogin"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationGmailLogin"
+        android:name="com.example.finalproject.GmailLoginFragment"
+        android:label="Gmail Login"
+        tools:layout="@layout/fragment_gmail_login" />
+    <fragment
+        android:id="@+id/navigationGmailRegister"
+        android:name="com.example.finalproject.GmailRegisterFragment"
+        android:label="Gmail Register"
+        tools:layout="@layout/fragment_gmail_register" />
+    <fragment
+        android:id="@+id/navigationPhoneLogin"
+        android:name="com.example.finalproject.PhoneLoginFragment"
+        android:label="Phone Login"
+        tools:layout="@layout/fragment_phone_login" >
+        <action
+            android:id="@+id/action_navigationPhoneLogin_to_navigationPhoneLoginCode"
+            app:destination="@id/navigationPhoneLoginCode"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationPhoneLoginCode"
+        android:name="com.example.finalproject.PhoneLoginCodeFragment"
+        android:label="Phone Login Code"
+        tools:layout="@layout/fragment_phone_login_code" >
+        <action
+            android:id="@+id/action_navigationPhoneLoginCode_to_navigationPhoneRegisterUserName"
+            app:destination="@id/navigationPhoneRegisterUserName"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationPhoneRegisterUserName"
+        android:name="com.example.finalproject.PhoneRegisterUserNameFragment"
+        android:label="Phone Register Username"
+        tools:layout="@layout/fragment_phone_register_user_name" />
+</navigation>

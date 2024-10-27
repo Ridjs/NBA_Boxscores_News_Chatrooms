@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".GmailRegisterFragment">
+
+    <EditText
+        android:id="@+id/id_text_gmail_password_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/days_one"
+        android:hint="PASSWORD"
+        android:inputType="text|textPassword"
+        android:textColor="#FFD700"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_text_gmail_username_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/days_one"
+        android:hint="USERNAME"
+        android:inputType="text"
+        android:textColor="#FFD700"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/id_text_gmail_password_register"
+        app:layout_constraintStart_toStartOf="@+id/id_text_gmail_password_register"
+        app:layout_constraintTop_toBottomOf="@+id/id_text_gmail_password_register" />
+
+    <Button
+        android:id="@+id/id_btn_gmail_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFD700"
+        android:fontFamily="@font/days_one"
+        android:text="REGISTER"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/id_text_gmail_password_register"
+        app:layout_constraintStart_toStartOf="@+id/id_text_gmail_password_register"
+        app:layout_constraintTop_toBottomOf="@+id/id_text_gmail_username_register" />
+
+    <EditText
+        android:id="@+id/id_text_mail_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:fontFamily="@font/days_one"
+        android:hint="GMAIL"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFD700"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/id_text_gmail_password_register"
+        app:layout_constraintEnd_toEndOf="@+id/id_text_gmail_password_register"
+        app:layout_constraintStart_toStartOf="@+id/id_text_gmail_password_register" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/gmail_icon"
+        app:layout_constraintBottom_toTopOf="@+id/id_text_mail_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

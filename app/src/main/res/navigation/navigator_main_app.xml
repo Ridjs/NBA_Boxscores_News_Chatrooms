@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigator"
+    app:startDestination="@id/navigationGames">
+    <fragment
+        android:id="@+id/navigationGames"
+        android:name="com.example.finalproject.GamesFragment"
+        android:label="GAMES"
+        tools:layout="@layout/fragment_games" >
+        <action
+            android:id="@+id/action_navigationGames_to_navigationNews"
+            app:destination="@id/navigationNews"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_navigationGames_to_navigationChat"
+            app:destination="@id/navigationChat"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_navigationGames_to_navigationSettings"
+            app:destination="@id/navigationSettings"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationNews"
+        android:name="com.example.finalproject.NewsFragment"
+        android:label="NEWS"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/navigationChat"
+        android:name="com.example.finalproject.ChatFragment"
+        android:label="CHAT"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/navigationSettings"
+        android:name="com.example.finalproject.SettingsFragment"
+        android:label="SETTINGS"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

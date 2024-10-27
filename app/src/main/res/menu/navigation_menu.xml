@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigationGames"
+        android:icon="@drawable/games"
+        android:title="GAMES"/>
+    <item
+        android:id="@+id/navigationNews"
+        android:icon="@drawable/news"
+        android:title="NEWS"/>
+    <item
+        android:id="@+id/navigationChat"
+        android:icon="@drawable/chat"
+        android:title="CHAT"/>
+    <item
+        android:id="@+id/navigationSettings"
+        android:icon="@drawable/settings"
+        android:title="SETTINGS"/>
+</menu>
